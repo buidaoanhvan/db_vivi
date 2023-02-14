@@ -1,0 +1,13 @@
+version: "3.8"
+
+services:
+  db:
+    image: mariadb:latest
+    environment:
+      MYSQL_ROOT_PASSWORD: vq8vVTi5JDjgpKT
+    volumes:
+      - ./db-data:/var/lib/mysql
+    ports:
+      - "3306:3306"
+volumes:
+  db-data:
