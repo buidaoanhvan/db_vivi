@@ -1,7 +1,7 @@
 version: "3.8"
 
 services:
-  db:
+  mariadb:
     image: mariadb:latest
     environment:
       MYSQL_ROOT_PASSWORD: vq8vVTi5JDjgpKT

@@ -3,10 +3,15 @@ CREATE TABLE `nguoi_dung` (
   `ten_nguoi_dung` VARCHAR(255) NOT NULL,
   `email` VARCHAR(255) NOT NULL,
   `mat_khau` VARCHAR(255) NOT NULL,
+  `ngay_sinh` DATE NOT NULL,
+  `gioi_tinh` INT(2),
   `hinh_anh` VARCHAR(255),
   `anh_bia` VARCHAR(255),
+  `trang_thai` INT(2),
   `ngay_tao` DATETIME NOT NULL,
-  `ngay_cap_nhat` DATETIME
+  `ngay_cap_nhat` DATETIME,
+  `token` VARCHAR(255),
+  `token_iat` TIMESTAMP
 );
 
 CREATE TABLE `bai_dang` (
